@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horário Comecial</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 id="btn-agendar" data-i18n="title">Horário Comecial</h1>
+          
+            <form id="ics">
+              <label for="start-date" data-i18n="start-date">Data</label>
+              <input required type="date" id="start-date" min="2023-05-27" name="start-date">
+
+              <label class="hide-if-full-day" for="start-time" data-i18n="start-time">Horário</label>
+              <input required class="hide-if-full-day" type="time" id="start-time" name="start-time">    
+
+              <button  type="submit" data-i18n="submit">Agendar Horário</button>
+            </form>
+          </div>
+          <script src="assets/js/index.js"></script>
+        </div>
+    </body>
+</html>

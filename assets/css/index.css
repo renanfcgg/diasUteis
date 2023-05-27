@@ -1,0 +1,60 @@
+html {
+    background: radial-gradient(#2f4f4f, black);
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+    padding: 0;
+    font-family: Roboto, Arial, Sans-serif;
+  }
+  
+  body {
+    @media (min-width: 600px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    margin: auto;
+    width: clamp(min(90vw, calc(600px - 2rem)), 60vw, 600px);
+    height: auto;
+    border: 0.5rem solid white;
+    padding: 2rem;
+    height: fit-content;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 0.5rem;
+  
+    @media (min-width: 600px) {
+      grid-template-columns: 0.5fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+  
+  h1 {
+    margin-block: 0 1em;
+  }
+  
+  input,
+  button {
+    justify-self: flex-start;
+    height: 2rem;
+    width: 100%;
+  
+    border: none;
+  }
+  
+  button {
+    grid-column: 1/3;
+    background: white;
+  }
