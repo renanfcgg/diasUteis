@@ -34,17 +34,56 @@ function verificaDiaDisponivel() {
     if(diaDaSemana && horasEMinutos || diaDaSemana == 0 && horasEMinutos) {
         if(diaDaSemana < 5 || diaDaSemana === 0) {
 
-            for (let i = 0; i < diaDaSemana; i++) {
+            // se for segunda
+            if(diaDaSemana == (diaDaSemana - diaDaSemana)) {
                 totalUtil;
-
-
                 if (totalUtil < 18) {
-                    alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 1]} ${totalUtil}:${horasEMinutos[1]}`);
-                    break;
+                    alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 1]} ${totalUtil}:${horasEMinutos[1]}`);
                 } else {
                     totalUtil = ((horario - 9) + 3);
-                    alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 2]} ${totalUtil}:${horasEMinutos[1]}`);
-                    break;
+                    alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 2]} ${totalUtil}:${horasEMinutos[1]}`);
+                }
+            // se for quinta
+            } else if (diaDaSemana == 3) {
+                for (let i = 0; i < diaDaSemana; i++) {
+                    totalUtil;
+                    
+                    if (totalUtil < 18) {
+                        alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 1 ]} ${totalUtil}:${horasEMinutos[1]}`);
+                        break;
+                    } else {
+                        totalUtil = ((horario - 9) + 3);
+                        alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana)]} ${totalUtil}:${horasEMinutos[1]}`);
+                        break;
+                    }
+                }
+            // se for sexta
+            } else if (diaDaSemana == 4) {
+                for (let i = 0; i < diaDaSemana; i++) {
+                    totalUtil;
+                    
+                    if (totalUtil < 18) {
+                        alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana)]} ${totalUtil}:${horasEMinutos[1]}`);
+                        break;
+                    } else {
+                        totalUtil = ((horario - 9) + 3);
+                        alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 1]} ${totalUtil}:${horasEMinutos[1]}`);
+                        break;
+                    }
+                }
+            } else {
+                for (let i = 0; i < diaDaSemana; i++) {
+                    totalUtil;
+                    
+    
+                    if (totalUtil < 18) {
+                        alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 1]} ${totalUtil}:${horasEMinutos[1]}`);
+                        break;
+                    } else {
+                        totalUtil = ((horario - 9) + 3);
+                        alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 2]} ${totalUtil}:${horasEMinutos[1]}`);
+                        break;
+                    }
                 }
             }
 
