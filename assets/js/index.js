@@ -1,6 +1,8 @@
 const form = document.getElementById("ics");
 const dayName = new Array ("segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo")
 
+document.onload = atualizarDia();
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -96,4 +98,11 @@ function sextaFeira(diaDaSemana, totalUtil, horario, horasEMinutos) {
         totalUtil = ((horario - 9) + 3);
         alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 1]} ${totalUtil}:${horasEMinutos[1]}`);
     }
+}
+
+
+function atualizarDia () {
+    let f = new Intl.DateTimeFormat('en');
+    let a = f.formatToParts();
+    document.querySelector("#start-date").min = `${a[4].value}-0${a[0].value}-${a[2].value}`;
 }
