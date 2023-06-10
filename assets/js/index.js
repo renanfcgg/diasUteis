@@ -1,5 +1,5 @@
 const form = document.getElementById("ics");
-var dayName = new Array ("segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo")
+const dayName = new Array ("segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo")
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -31,43 +31,37 @@ function verificaDiaDisponivel() {
     const horario = horasEMinutos[0];
     let totalUtil = ((horario - 9) + 12);
 
-    if(diaDaSemana == 0) {
-        diaDaSemana = 0.1;
-    }
+    if(diaDaSemana && horasEMinutos || diaDaSemana == 0 && horasEMinutos) {
+        if(diaDaSemana < 5 || diaDaSemana === 0) {
 
-    if(diaDaSemana && horasEMinutos) {
-
-        if(diaDaSemana < 5) {
-            console.log(diaDaSemana);
             for (let i = 0; i < diaDaSemana; i++) {
-                
+                totalUtil;
+
+
+                if (totalUtil < 18) {
+                    alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 1]} ${totalUtil}:${horasEMinutos[1]}`);
+                    console.log("foi bruno")
+                    break;
+                } else {
+                    totalUtil = ((horario - 9) + 3);
+                    console.log("foi bruno")
+                    alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 2]} ${totalUtil}:${horasEMinutos[1]}`);
+                    break;
+                }
             }
 
-
         } else {
-            if (diaDaSemana === 5) {
-                if (horario < 18) {
-                    totalUtil;
-
-                    if (totalUtil < 18) {
-                        alert(`Parabéns, Você foi agendado para Terça ${totalUtil}:${horasEMinutos[1]}`);
-                    } else {
-                        totalUtil = ((horario - 9) + 3);
-                        alert(`Parabéns, Você foi agendado teste para Quarta ${totalUtil}:${horasEMinutos[1]}`);
-                    }
-                }
-            } else {
-                if (diaDaSemana === 6) {
-                    if (horario < 18) {
-                        totalUtil;
-
-                        if (totalUtil < 18) {
-                            alert(`Parabéns, Você foi agendado para Terça ${totalUtil}:${horasEMinutos[1]}`);
-                        } else {
-                            totalUtil = ((horario - 9) + 3);
-                            alert(`Parabéns, Você foi agendado teste para Quarta ${totalUtil}:${horasEMinutos[1]}`);
-                        }
-                    }
+            for (let i = 4; i < diaDaSemana; i++) {
+                totalUtil;
+                if (totalUtil < 18) {
+                    alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 1]} ${totalUtil}:${horasEMinutos[1]}`);
+                    console.log("foi bruno")
+                    break;
+                } else {
+                    totalUtil = ((horario - 9) + 3);
+                    console.log("foi bruno")
+                    alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 2]} ${totalUtil}:${horasEMinutos[1]}`);
+                    break;
                 }
             }
         }
