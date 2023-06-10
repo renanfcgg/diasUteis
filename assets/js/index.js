@@ -14,7 +14,7 @@ function armazenaHora() {
     const stringHora = document.querySelector("#start-time").value;
     const partesHora = stringHora.split(":");
     const hora = parseInt(partesHora[0], 10); 
-    const minuto = parseInt(partesHora[1], 10); 
+    const minuto = partesHora[1]; 
     const horasEMinutos = [hora, minuto]
     return horasEMinutos;
 }
@@ -104,5 +104,7 @@ function sextaFeira(diaDaSemana, totalUtil, horario, horasEMinutos) {
 function atualizarDia () {
     let f = new Intl.DateTimeFormat('en');
     let a = f.formatToParts();
+    const horario = document.querySelector("#start-time")
     document.querySelector("#start-date").min = `${a[4].value}-0${a[0].value}-${a[2].value}`;
+    
 }
