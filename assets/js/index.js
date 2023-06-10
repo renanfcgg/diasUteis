@@ -40,11 +40,9 @@ function verificaDiaDisponivel() {
 
                 if (totalUtil < 18) {
                     alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 1]} ${totalUtil}:${horasEMinutos[1]}`);
-                    console.log("foi bruno")
                     break;
                 } else {
                     totalUtil = ((horario - 9) + 3);
-                    console.log("foi bruno")
                     alert(`Parabéns, Você foi agendado para ${dayName[diaDaSemana + 2]} ${totalUtil}:${horasEMinutos[1]}`);
                     break;
                 }
@@ -55,11 +53,9 @@ function verificaDiaDisponivel() {
                 totalUtil;
                 if (totalUtil < 18) {
                     alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 1]} ${totalUtil}:${horasEMinutos[1]}`);
-                    console.log("foi bruno")
                     break;
                 } else {
                     totalUtil = ((horario - 9) + 3);
-                    console.log("foi bruno")
                     alert(`Parabéns, Você foi agendado para ${dayName[(diaDaSemana - diaDaSemana) + 2]} ${totalUtil}:${horasEMinutos[1]}`);
                     break;
                 }
