@@ -1,11 +1,11 @@
 <div>
-  <img src="/assets/images/projeto.jpg" alt="Demonstração do projeto" widht="100%" />
+  <img src="assets/images/projeto.jpg" alt="Demonstração do projeto" widht="100%" />
 </div>
 
 # 🖥️ Projeto
 
 <p>
-  Projeto desenvolvido pra Teste, onde o usuário escolhe um dia e horário, a validação é feita sobre dias da semana e final de semana. Horário comercial.
+  Projeto desenvolvido pra Teste, onde o usuário escolhe um dia, horário e após isso ocorre um levantamento de 12h, a validação é feita sobre dias da semana e final de semana. Horário comercial.
 </p>
 
 ## 🚀 Tecnologias
