@@ -1,20 +1,26 @@
-<div>
-  <img src="/assets/images/projeto.jpg" alt="Demonstração do projeto" widht="100%" />
-</div>
+# Dias Uteis
 
-# 🖥️ Projeto
+Projeto desenvolvido pra Teste, onde o usuário escolhe um dia, horário e após isso ocorre um levantamento de 12h úteis, a validação é feita sobre dias úteis e horário comercial.
 
-<p>
-  Projeto desenvolvido pra Teste, onde o usuário escolhe um dia, horário e após isso ocorre um levantamento de 12h, a validação é feita sobre dias da semana e final de semana. Horário comercial.
-</p>
+## Preview
+
+![App Screenshot](/assets/images/projeto.jpg?text=App+Screenshot+Here)
+
+
+## Funcionalidades
+
+- Agendamento de atendimento
+- Escolha de Dias e Horários
+- Validação dia útil e horário comercial.
+- Acrescentando 12h úteis, após a escolha do usuário.
 
 ## 🚀 Tecnologias
+- <img align="center" alt="Renan-Js" height="30" widht="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+- <img align="center" alt="Renan-Js" height="30" widht="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+- <img align="center" alt="Renan-Js" height="30" widht="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 
-<p>
- Esse projeto foi desenvolvido com as seguintes tecnologias: 
-  <div>
-  - <img align="center" alt="Renan-Js" height="30" widht="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  - <img align="center" alt="Renan-Js" height="30" widht="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  - <img align="center" alt="Renan-Js" height="30" widht="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  </div>
-</p>
+
+## Autores
+- [@Renanfcgg](https://github.com/renanfcgg)
+- [@BrunoDosSantos26](https://github.com/BrunoDosSantos26)
+
